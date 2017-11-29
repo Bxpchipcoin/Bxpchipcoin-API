@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>bxpchipcoin</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
+    <!-- Js -->
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/min/waypoints.min.js"></script>
+    <script src="js/jquery.counterup.js"></script>
+
+    <!-- Google Map -->
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script src="js/google-map-init.js"></script>
+
+
+    <script src="js/main.js"></script>
+
+
+  </head>
+  <body>
+    <!-- Header Start -->
+<header>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <!-- header Nav Start -->
+          <nav class="navbar navbar-default">
+            <div class="container-fluid">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">
+                  <img src="img/logo.png" alt="Logo">
+                </a>
+              </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+<div class="main_menu">
+            <nav id="nav_menu">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              </button> 
+            <div id="navbar">
+              <ul>
+                <li><a class="page-scroll" href="index.html">Inicio</a></li> 
+                          
+
+              <li><a href="#">Empresa<i class="fa fa-angle-down"></i></a>
+              <ul>
+                <li><a class="page-scroll" href="Quienes Somos.html">&iquest;Qui&eacute;nes somos?</a></li>
+                <li><a class="page-scroll" href="Blog.html">Blog</a></li>
+                <li><a class="page-scroll" href="Legal.html">Legal</a></li>
+              </ul>
+              </li>
+               <li><a href="#">Usuarios<i class="fa fa-angle-down"></i></a>
+              <ul>
+                <li><a class="page-scroll" href="Preguntas.html">Preguntas Frecuentes</a></li>
+               <!--  <li><a class="page-scroll" href="#">Trading</a></li> -->
+                <li><a class="page-scroll" href="Testamentario.html">Contrato Testamentario</a></li>
+                <li><a class="page-scroll" href="Contrato Aduanal.html">Contrato Aduanal</a></li>
+                <!-- <li><a class="page-scroll" href="#">Fideicomiso</a></li> -->
+              </ul>
+              </li>   
+              
+                <li><a class="page-scroll" href="API.html">API</a></li>
+                <li><a class="page-scroll" href="contact.html">Contacto</a></li>
+               <!-- <li><a class="page-scroll" href="#pr_sec">Our Service</a></li>
+                <li><a class="page-scroll" href="#protfolio_sec">Our Portfolio</a></li>
+                <li><a class="page-scroll" href="#ctn_sec">Contact Us</a></li> -->
+              </ul>
+            </div>    
+            </nav>      
+          </div>          
+            
+        </div>
+      </div>  
+    </div>  
+  </div>  
+</header>
+        
+
+        <!-- contact form start -->
+        <section id="contact-form">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 col-sm-12">
+                <div class="block">
+
+
+<div class="container container_fluid container_fluid_column">
+<div class="blockApi stdfont">
+<div class="static">
+<div class="block__api">
+<h2 id="hitbtc-api-guide" style="text-align: center;"><span style="color:#2B579E;">Bxpchipcoin API Guide</span></h2>
+
+<h2 id="table-of-contents"><span style="color:#2B579E;">Table of contents</span></h2>
+
+<ul>
+  <li style="text-align: justify;"><a href="#summary">SUMMARY</a><br />
+  &mdash; <a href="#cursymbols">Currency symbols</a></li>
+  <li style="text-align: justify;"><a href="#ResfulApi">RESTFUL API</a><br />
+  &mdash; <a href="#marketrestful">Account data</a><br />
+  &mdash; <a href="#paymentsrestful">Payment</a><br />
+  &mdash; <a href="#tradingstreaming">Trading</a><br />
+  &mdash; <a href="#sample">Sample code</a></li>
+</ul>
+
+<h1 id="-a-name-summary-summary-a-"><a name="summary"><span style="color:#2B579E;">Summary</span></a></h1>
+
+<p style="text-align: justify;"><span style="color:#7B7B7B;">This document provides the complete reference for </span><a href=""><span style="color:#7B7B7B;">Bxpchipcoin</span></a><span style="color:#7B7B7B;"> API.</span></p>
+
+<p style="text-align: justify;"><span style="color:#7B7B7B;">Bxpchipcoin API has several interfaces to implement them in a custom software:</span></p>
+
+<ul>
+  <li style="text-align: justify;"><span style="color:#2B579E;"><b>RESTful API</b></span> <span style="color:#7B7B7B;">that allows:</span>
+
+  <ul>
+    <li><span style="color:#7B7B7B;">access to the market data: get trades, etc. See </span><a href="#marketrestful">Account data RESTful API</a></li>
+    <li><span style="color:#7B7B7B;">performing trading operations: get trading balance, get history, etc. See </span><a href="#tradingrestful">Trading RESTful API</a></li>
+    <li><span style="color:#7B7B7B;">managing funds: get balance of the main account, transfer funds between main and trading accounts, create an outgoing transactions, etc. See </span><a href="#paymentsrestful">Payment RESTful API</a></li>
+  </ul>
+  </li>
+</ul>
+
+<p style="text-align: justify;"><span style="color:#7B7B7B;">Trading and payment operations require user&rsquo;s authentication: each request or message should have a signature.See details in</span> <a href="#authenticationrestful">RESTful API authentication</a> <span style="color:#7B7B7B;">and</span> <a href="#authenticationwebsocket">WebSocket API authentication</a>.</p>
+
+<h3 id="-a-name-cursymbols-currency-symbols-a-"><a name="cursymbols"><span style="color:#2B579E;">Currency symbols</span></a></h3>
+
+<p style="text-align: justify;"><span style="color:#7B7B7B;">The following currency symbols are traded on Bxpchipcoin exchange.</span></p>
+
+<table>
+  <thead>
+    <tr>
+      <th><span style="color:#2B579E;">Symbol</span></th>
+      <th><span style="color:#2B579E;">Lot size</span></th>
+      <th><span style="color:#2B579E;">Price step</span></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: justify;"><span style="color:#7B7B7B;">BTCUSD</span></td>
+      <td style="text-align: justify;"><span style="color:#7B7B7B;">0.01 BTC</span></td>
+      <td style="text-align: justify;"><span style="color:#7B7B7B;">0.01</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: justify;"><span style="color:#7B7B7B;">BTCEUR</span></td>
+      <td style="text-align: justify;"><span style="color:#7B7B7B;">0.01 BTC</span></td>
+      <td style="text-align: justify;"><span style="color:#7B7B7B;">0.01</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: justify;"><span style="color:#7B7B7B;">DSHBTC</span></td>
+      <td style="text-align: justify;"><span style="color:#7B7B7B;">1 DSH</span></td>
+      <td style="text-align: justify;"><span style="color:#7B7B7B;">0.00000001</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: justify;"><span style="color:#7B7B7B;">ETHBTC</span></td>
+      <td style="text-align: justify;"><span style="color:#7B7B7B;">0.001 ETH</span></td>
+      <td style="text-align: justify;"><span style="color:#7B7B7B;">0.000001</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: justify;"><span style="color:#7B7B7B;">RIPPLE</span></td>
+      <td style="text-align: justify;"><span style="color:#7B7B7B;">1 XRP</span></td>
+      <td style="text-align: justify;"><span style="color:#7B7B7B;">0.00000001</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: justify;"><span style="color:#7B7B7B;">DASH</span></td>
+      <td style="text-align: justify;"><span style="color:#7B7B7B;">100 DASH</span></td>
+      <td style="text-align: justify;"><span style="color:#7B7B7B;">0.0000001</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: justify;"><span style="color:#7B7B7B;">CHIPCOIN</span></td>
+      <td style="text-align: justify;"><span style="color:#7B7B7B;">100 CHIPCOIN</span></td>
+      <td style="text-align: justify;"><span style="color:#7B7B7B;">0.01</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<p style="text-align: justify;"><span style="color:#7B7B7B;">The actual list of symbols can be obtained by</span> <a href="#symbols"></a> <span style="color:#7B7B7B;">method.</span></p>
+
+<p style="text-align: justify;"><span style="color:#7B7B7B;">Size representation:</span></p>
+
+<ul>
+  <li style="text-align: justify;"><span style="color:#7B7B7B;">Size values in streaming messages are represented in lots.</span></li>
+  <li style="text-align: justify;"><span style="color:#7B7B7B;">Size values in RESTful market data are represented in money (e.g. in coins or in USD).</span></li>
+  <li style="text-align: justify;"><span style="color:#7B7B7B;">Size values in RESTful trade are represented in lots (e.g. 1 means 0.01 BTC for BTCUSD)</span></li>
+</ul>
+
+<h1 id="-a-name-restful-restful-api-a-"><a name="ResfulApi"><span style="color:#2B579E;">RESTful API</span></a></h1>
+
+<p style="text-align: justify;"><span style="color:#7B7B7B;">RESTful API provides the most functional access to Bxpchipcoin facilities. RESTful API allows:</span></p>
+
+<ul>
+  <li style="text-align: justify;"><span style="color:#7B7B7B;">access to the market data: trades, etc. See </span><a href="">Account data RESTful API</a></li>
+  <li style="text-align: justify;"><span style="color:#7B7B7B;">performing trading operations: get trading balance,get history, etc. See</span> <a href="#ResfulApi">Trading RESTful API</a></li>
+  <li style="text-align: justify;"><span style="color:#7B7B7B;">managing funds: get balance of the main account, transfer funds between main and trading accounts, create an outgoing transactions, etc. See </span><a href="#paymentsrestful">Payment RESTful API</a></li>
+</ul>
+
+<p style="text-align: justify;"><span style="color:#7B7B7B;">Endpoint URL:</span> <a href="http://API.bxpchip-coin.org">http://API.bxpchip-coin.org</a>.</p>
+
+<p style="text-align: justify;"><span style="color:#7B7B7B;">Bxpchipcoin provides a <b>demo trading</b> option. You can enable demo mode and acquire demo API keys on the </span><a href=""><span style="color:#7B7B7B;">Settings</span></a><span style="color:#7B7B7B;"> page.</span><br />
+<span style="color:#7B7B7B;">Demo endpoint address: </span><a href="http://API.bxpchip-coin.org">http://API.bxpchip-coin.org</a></p>
+
+<p style="text-align: justify;"><span style="color:#7B7B7B;">Trading and payment operations require</span> <a href="">authentication</a>.<span style="color:#7B7B7B;"> See also</span> <a href="">error codes</a>.</p>
+
+<h2 id="-a-name-marketrestful-market-data-restful-api-a-"><a name="marketrestful"><span style="color:#2B579E;">Account data RESTful API</span></a></h2>
+
+<p style="text-align: justify;"><span style="color:#7B7B7B;">RESTful API provides access to the market data with following methods:</span></p>
+
+<ul>
+  <li><span style="color:#7B7B7B;">get the code of login - </span><a href="#Login">/api/webresources/mobilservice?user={0,1}&password=ef8485e6f</a></li>
+  <li><span style="color:#7B7B7B;">get the response of exit -</span> <a href="#exit">/api/webresources/MobilserviceExit?code=FEF2BA9573B0647DDFC7A7DC7C75C4E9</a></li>
+  <li><span style="color:#7B7B7B;">get the response of the create Account- </span><a href="#Account">/api/webresources/BxpUsers?Name=test&Password=test&Ask=2&Answer=test&Mail=test@test.com.mx&Cellphone=5555326315</a></li>
+  <li><span style="color:#7B7B7B;">get all the wallets to do transactions -</span> <a href="#wallet">/api/webresources/BxpAccount?AccountName=test&Password=test&Ask=1&Answer=test&Code=17A24E9FF79443E66EA0F39812B56EFDt</a></li>
+  <li><span style="color:#7B7B7B;">get all the transactions - </span><a href="#transactions">api/webresources/BxpTrading?TypeCoin=1&UserId=1&coin=7&Parity=304.354&Amount=40&originAccount=0x77a389210a447ab2a370d63279c3d1&FinalAccount=ef3f3c517947b1f2b999b30e34c1&Password_or=M4st17.&Import=50&IdOri=1&IdDestP=1&ComisionFinalAccount=0x77a6a447ab2a370d63279c3d1&ComisionFinalId=1&ComisionOriginAccount=e55f37947b1f2b999b30e34c1&IdOriComision=1&MyPassSecretComision=test&code=9EE1082D53C56C392934D3</a></li>
+  <li><span style="color:#7B7B7B;">get individual trades data for specified symbol - </span><a href="">/api/webresources/BxpBlockChain?code=9EE1082D53C56C3929355A60C863E4D3&User={0,1}</a></li>
+  <li><span style="color:#7B7B7B;">get recent trades for specified symbol - </span><a href="">/api/webresources/BxpBlockChain?code=9EE1082D53C56C3929355A60C863E4D3&Cliente={0,1}</a></li>
+</ul>
+
+<h3 id="-a-name-symbols-api-1-public-symbols-a-"><a name="Login"><span style="color:#2B579E;">http://api.bxpchip-coin.org:8092/api/webresources/mobilservice?user={0,1}&password=ehyrff9e6f</span></a></h3>
+
+<p style="text-align: justify;"><span style="color:#7B7B7B;"><i>Summary:</i>Send parameters like the name and password to login, returns the code of the sesion on Bxpchipcoin:</span></p>
+
+<p style="text-align: justify;"><span style="color:#7B7B7B;"><i>Request:</i> <code>GET http://api.bxpchip-coin.org:8092/api/webresources/mobilservice?user={0,1}&password=efuujjb449e6f/code></span></p>
+
+<p style="text-align: justify;"><span style="color:#7B7B7B;"><i>Example:</i> <code>http://api.bxpchip-coin.org:8092/api/webresources/mobilservice?user={0,1}&password=efhjt9e6f</code></span></p>
+
+<p style="text-align: justify;"><span style="color:#7B7B7B;"><i>Example response:</i></span></p>
+
+<pre style="text-align: justify;">
+<span style="color:#7B7B7B;"><code class="lang-json">
+   
+        {
+            &quot;<span>Response</span>&quot;: <span class="hljs-value"><span class="hljs-string">&quot;OK&quot;</span></span>,
+            &quot;<span>Code</span>&quot;: <span class="hljs-value"><span class="hljs-string">&quot;77BCB1445BAA55EC0EAD25F312306253&quot;</span></span>,
+            
+        },
+        
+</code></span></pre>
+
+<h3 id="-a-name-symbols-api-1-public-symbols-a-"><a name="exit"><span style="color:#2B579E;">http://api.bxpchip-coin.org:8092/api/webresources/MobilserviceExit?code=FEF2BA9573B0647DDFC7A7DC7C75C4E9</span></a></h3>
+
+<p style="text-align: justify;"><span style="color:#7B7B7B;"><i>Summary:</i> Exit returns the code of the sesion on Bxpchipcoin:</span></p>
+
+<p style="text-align: justify;"><span style="color:#7B7B7B;"><i>Request:</i> <code>GET http://api.bxpchip-coin.org:8092/api/webresources/MobilserviceExit?code=FEF2BA9573B0647DDFC7A7DC7C75C4E9</code></span></p>
+
+<p style="text-align: justify;"><span style="color:#7B7B7B;"><i>Example:</i> <code>http://api.bxpchip-coin.org:8092/api/webresources/MobilserviceExit?code=FEF2BA9573B0647DDFC7A7DC7C75C4E9></span></p>
+
+<p style="text-align: justify;"><span style="color:#7B7B7B;"><i>Example response:</i></span></p>
+
+<pre style="text-align: justify;">
+<span style="color:#7B7B7B;"><code class="lang-json">
+   
+        {
+            &quot;<span>Response</span>&quot;: <span class="hljs-value"><span class="hljs-string">&quot;OK&quot;</span></span>,
+                    
+        },
+        
+</code></span></pre>
+
+<h3 id="-a-name-ticker-api-1-public-symbol-ticker-a-"><a name="Account"><span style="color:#2B579E;">http://api.bxpchip-coin.org:8092/api/webresources/BxpUsers?Name=test&Password=test&Ask=2&Answer=test&Mail=test@test.com.mx&Cellphone=5555326315</span></a></h3>
+
+<p style="text-align: justify;"><span style="color:#7B7B7B;"><i>Summary:</i> send parameter like Account name,Password,security question, security answer,returns the status when created a new Account.</span></p>
+
+<p style="text-align: justify;"><span style="color:#7B7B7B;">Create a new Account in Bxpchipcoin site: see</span> <a href="https://sys.chip-coin.net:1006/sys/iCommerce/modules/mod_chipcoin/ingresos_ext_wallet.jsp">https://sys.chip-coin.net:1006/sys/iCommerce/modules/mod_chipcoin/ingresos_ext_wallet.jsp</a> <span style="color:#7B7B7B;">for each line.</span></p>
+
+<p style="text-align: justify;"><span style="color:#7B7B7B;"><i>Request:</i> <code>GET http://api.bxpchip-coin.org:8092/api/webresources/BxpUsers?Name=test&Password=test&Ask=2&Answer=test&Mail=test@test.com.mx&Cellphone=5555326315</code> where <code>:Account</code> is create a new Account in which can do trading.</span></p>
+
+<p style="text-align: justify;"><span style="color:#7B7B7B;"><i>Example:</i> <code>http://api.bxpchip-coin.org:8092/api/webresources/BxpUsers?Name=test&Password=test&Ask=2&Answer=test&Mail=test@test.com.mx&Cellphone=5555326315</code></span></p>
+
+<p style="text-align: justify;"><span style="color:#7B7B7B;"><i>Example response:</i></span></p>
+
+<pre style="text-align: justify;">
+<span style="color:#7B7B7B;"><code class="lang-json">{
+    &quot;<span class="hljs-attribute">Response</span>&quot;: <span class="hljs-value"><span class="hljs-string">&quot;OK&quot;</span></span>,
+    &quot;<span class="hljs-attribute">User ID</span>&quot;: <span class="hljs-value"><span class="hljs-string">&quot;125&quot;</span></span>,
+    &quot;<span class="hljs-attribute">Password</span>&quot;: <span class="hljs-value"><span class="hljs-string">&quot;XCYySmBFWdXN&quot;</span></span>,
+    
+}
+</code></span></pre>
+
+<h3 id="-a-name-alltickers-api-1-public-ticker-a-"><a name="wallet"><span style="color:#2B579E;">http://api.bxpchip-coin.org:8092/api/webresources/BxpAccount?AccountName=test&Password=test&Ask=1&Answer=test&Code=17A24E9FF79443E66EA0F39812B56EFD</span></a></h3>
+
+<p style="text-align: justify;"><span style="color:#7B7B7B;"><i>Summary:</i> send parameters like wallet name and Password, returns the status where the wallet for the trades was created.</span></p>
+
+<p style="text-align: justify;"><span style="color:#7B7B7B;"><i>Example:</i> <code>http://api.bxpchip-coin.org:8092/api/webresources/BxpAccount?AccountName=test&Password=test&Ask=1&Answer=test&Code=17A24E9FF79443E66EA0F39812B56EFD</code></span></p>
+
+<p style="text-align: justify;"><span style="color:#7B7B7B;"><i>Example response:</i></span></p>
+
+<pre style="text-align: justify;">
+<span style="color:#7B7B7B;"><code class="lang-json">
+     <span class="hljs-value">{
+        &quot;<span class="hljs-attribute">Response</span>&quot;: <span class="hljs-value"><span class="hljs-string">&quot;OK&quot;</span></span>,        
+    </span>}
+    
+
+</code></span></pre>
+
+<table height="96" width="684">
+  <thead>
+    <tr>
+      <th><span style="color:#2B579E;">Parameter</span></th>
+      <th><span style="color:#2B579E;">Required</span></th>
+      <th><span style="color:#2B579E;">Type</span></th>
+      <th><span style="color:#2B579E;">Description</span></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span style="color:#7B7B7B;"><code>Account_name</code></span></td>
+      <td><span style="color:#7B7B7B;">Yes</span></td>
+      <td><span style="color:#7B7B7B;"><code>string</code></span></td>
+      <td><span style="color:#7B7B7B;">Account names returned: as a string (default)</span></td>
+    </tr>
+    <tr>
+      <td><span style="color:#7B7B7B;"><code>Account_amount</code></span></td>
+      <td><span style="color:#7B7B7B;">No</span></td>
+      <td><span style="color:#7B7B7B;"><code>number</code></span></td>
+      <td><span style="color:#7B7B7B;">Account amount returned: as a number</span></td>
+    </tr>
+    <tr>
+      <td><span style="color:#7B7B7B;"><code>Numer_account</code></span></td>
+      <td><span style="color:#7B7B7B;">Yes</span></td>
+      <td><span style="color:#7B7B7B;"><code>String</code></span></td>
+      <td><span style="color:#7B7B7B;">Number account returned: as a string</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="-a-name-orderbook-api-1-public-symbol-orderbook-a-"><a name="transactions"><span style="color:#2B579E;">/api/webresources/BxpBlockChain?code=9EE1082D53C56C3929355A60C863E4D3&User={0,1}</span></a></h3>
+
+<p style="text-align: justify;"><span style="color:#7B7B7B;"><i>Summary:</i> send parameters like a Account name, Password, the Account tthat recived amount. Returns a num trades that indentified the transaction.</span></p>
+
+<p style="text-align: justify;"><span style="color:#7B7B7B;"><i>Request:</i> </span></p>
+
+<p style="text-align: justify;"><span style="color:#7B7B7B;"><i>Alias:</i> -&gt;</span></p>
+
+<p style="text-align: justify;"><span style="color:#7B7B7B;"><i>Example:</i></span></p>
+
+<p style="text-align: justify;"><span style="color:#7B7B7B;"><i>Example response:</i></span></p>
+
+<pre style="text-align: justify;">
+<span style="color:#7B7B7B;"><code class="lang-json">
+   
+        {
+            &quot;<span>Response</span>&quot;: <span class="hljs-value"><span class="hljs-string">&quot;Complete transaction&quot;</span></span>,
+            &quot;<span>Transaction number</span>&quot;: <span class="hljs-value"><span class="hljs-string">&quot;4d56dd7b1c681834d5d5bc30522de5a530b1d414&quot;</span></span>,
+                    
+        },
+        
+</code></span></pre>
+
+<h3 id="-a-name-trades-api-1-public-symbol-trades-a-"><a name="trades"><span style="color:#2B579E;">http://api.bxpchip-coin.org:8092/api/webresources/BxpBlockChain?code=9EE1082D53C56C3929355A60C863E4D3&User={0.1}</span></a></h3>
+
+<p style="text-align: justify;"><span style="color:#7B7B7B;"><i>Summary:</i> returns credit,accounting on trades for specified currency symbol in transaction number,taxes and User ID interval.</span></p>
+
+<p style="text-align: justify;"><span style="color:#7B7B7B;"><i>Request:</i> <code>GET http://api.bxpchip-coin.org:8092/api/webresources/BxpWallet?originAccount=5776a447ab2a370d63279c3d1&finalAccount=ef3b1a650de34c1&Password=Password=ucgdygdyg&Monto=40&Code=5A60C863E4D3</code> where <code>:symbol</code> is a currency symbol traded on Bxpchipcoin exchange</span> <span style="color:#7B7B7B;">(see</span> <a href="#cursymbols">Currency symbols</a>)</p>
+
+<p><span style="color:#7B7B7B;"><i>Parameters:</i></span></p>
+
+<table>
+  <thead>
+    <tr>
+      <th><span style="color:#2B579E;">Parameter</span></th>
+      <th><span style="color:#2B579E;">Reqired</span></th>
+      <th><span style="color:#2B579E;">Type</span></th>
+      <th><span style="color:#2B579E;">Description</span></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>date</code></td>
+      <td><span style="color:#7B7B7B;">Yes</span></td>
+      <td><span style="color:#7B7B7B;">String</span></td>
+      <td><span style="color:#7B7B7B;">Returns trades with <code>date</code> &gt; specified <code>trade_id</code> (if <code>by=trade_id</code>) or returns trades with <code>timestamp</code> &gt;= specified <code>timestamp</code> (if <code>by=ts</code>)</span></td>
+    </tr>
+    <tr>
+      <td><span style="color:#7B7B7B;"><code>credit</code></span></td>
+      <td><span style="color:#7B7B7B;">Yes</span></td>
+      <td><span style="color:#7B7B7B;">decimal</span></td>
+      <td><span style="color:#7B7B7B;">Returns trades with <code>trade_id</code> &lt; specified <code>credit</code> (if <code>by=trade_id</code>) or returns trades with <code>transaction_number</code> &lt; specified <code>transaction_number</code></span></td>
+    </tr>
+    <tr>
+      <td><span style="color:#7B7B7B;"><code>accounting</code></span></td>
+      <td><span style="color:#7B7B7B;">Yes</span></td>
+      <td><span style="color:#7B7B7B;"><code>decimal</code></span></td>
+      <td><span style="color:#7B7B7B;">Returns trades with <code>trade_id</code> &lt; specified <code>Accounting</code> (if <code>by=trade_id</code>) or returns trades with <code>transaction_number</code> &lt; specified <code>transaction_number</code></span></td>
+    </tr>
+    <tr>
+      <td><span style="color:#7B7B7B;"><code>destination_account</code></span></td>
+      <td><span style="color:#7B7B7B;">Yes</span></td>
+      <td><span style="color:#7B7B7B;"><code>String</code></span></td>
+      <td><span style="color:#7B7B7B;">Trades are sorted with destination account</span></td>
+    </tr>
+    <tr>
+      <td><span style="color:#7B7B7B;"><code>Notes</code></span></td>
+      <td><span style="color:#7B7B7B;">No</span></td>
+      <td><span style="color:#7B7B7B;">String</span></td>
+      <td><span style="color:#7B7B7B;">Trades are defined, what kind of transaction was realized.</span></td>
+    </tr>
+    <tr>
+      <td><span style="color:#7B7B7B;"><code>trade_number</code></span></td>
+      <td><span style="color:#7B7B7B;">Yes</span></td>
+      <td><span style="color:#7B7B7B;">String</span></td>
+      <td><span style="color:#7B7B7B;">trades return a number that was identified</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<p style="text-align: justify;"><span style="color:#7B7B7B;"><i>Alias:</i></span></p>
+
+<pre style="text-align: justify;">
+<span style="color:#7B7B7B;"><code>/api/<span class="hljs-number">1</span>/request/<span class="hljs-symbol">:symbol/trades</span>.json?since=&lt;trade_id&gt; -&gt; <span class="hljs-regexp">/api/</span><span class="hljs-number">1</span>/public/<span class="hljs-symbol">:symbol/trades?from=&lt;trade_id&gt;&amp;by=trade_id&amp;start_index=</span><span class="hljs-number">0</span>&amp;format_numbers=number&amp;format_tradeid=string&amp;format_objects=object&amp;format_timestamp=second
+</code></span></pre>
+
+<p style="text-align: justify;"><span style="color:#7B7B7B;"><i>Example:</i></span></p>
+
+<pre style="text-align: justify;">
+<span style="color:#7B7B7B;"><code>/api/<span class="hljs-number">1</span>/<span class="hljs-keyword">public</span>/BTCUSD/trades?<span class="hljs-keyword">from</span>=<span class="hljs-number">0</span>&amp;<span class="hljs-keyword">by</span>=trade_id&amp;sort=<span class="hljs-keyword">desc</span>&amp;start_index=<span class="hljs-number">0</span>&amp;max_results=<span class="hljs-number">100</span>
+</code></span></pre>
+
+<p style="text-align: justify;"><span style="color:#7B7B7B;"><i>Example response:</i></span></p>
+
+<pre style="text-align: justify;">
+<span style="color:#7B7B7B;"><code class="lang-json">{
+    &quot;<span class="hljs-attribute">trades</span>&quot;: <span class="hljs-value">[
+        [ <span class="hljs-string">&quot;07/01/2017&quot;</span>, <span class="hljs-number">575.64</span>, <span class="hljs-number">0.02</span>, <span class="hljs-string">&quot;4d56dd7b1c681834d5d5bc30522de5a530b1d414&quot;</span>,<span class="hljs-string">&quot;Payment&quot;</span>,<span class="hljs-string">&quot;0xa03e2973f561d7a1894ab086a2f043be8b8c3a9e18bf5546d5b89336cc76331d&quot;</span> ],
+        [ <span class="hljs-string">&quot;25/02/201&quot;</span>, <span class="hljs-number">574.3</span>, <span class="hljs-number">0.12</span>, <span class="hljs-string">&quot;4d56dd7b1c681834d5d5bc30522de5a530b1d414&quot;</span>,<span class="hljs-string">&quot;Payment&quot;</span>,<span class="hljs-string">&quot;0xa03e2973f561d7a1894ab086a2f043be8b8c3a9e18bf5546d5b89336cc76331d&quot;</span> ],
+        [ <span class="hljs-string">&quot;18/03/2017&quot;</span>, <span class="hljs-number">573.67</span>, <span class="hljs-number">3.8</span>, <span class="hljs-string">&quot;4d56dd7b1c681834d5d5bc30522de5a530b1d414&quot;</span>,<span class="hljs-string">&quot;Trades&quot;</span>,<span class="hljs-string">&quot;0xa03e2973f561d7a1894ab086a2f043be8b8c3a9e18bf5546d5b89336cc76331d&quot;</span>],
+        [ <span class="hljs-string">&quot;30/03/2017&quot;</span>, <span class="hljs-number">571</span>, <span class="hljs-number">0.01</span>, <span class="hljs-string">&quot;4d56dd7b1c681834d5d5bc30522de5a530b1d414&quot;</span>, <span class="hljs-string">&quot;Payment&quot;</span>,<span class="hljs-string">&quot;0xa03e2973f561d7a1894ab086a2f043be8b8c3a9e18bf5546d5b89336cc76331d&quot;</span> ],
+        ...
+    ]
+</span>}
+</code></span></pre>
+
+<p style="text-align: justify;"><span style="color:#7B7B7B;"><i>Example:</i></span></p>
+
+<pre style="text-align: justify;">
+<span style="color:#7B7B7B;"><code>/api/<span class="hljs-number">1</span>/public/BTCUSD/trades?<span class="hljs-built_in">from</span>=<span class="hljs-number">0</span>&amp;<span class="hljs-keyword">by</span>=trade_id&amp;<span class="hljs-built_in">sort</span>=desc&amp;start_index=<span class="hljs-number">0</span>&amp;max_results=<span class="hljs-number">100</span>&amp;format_item=object&amp;format_price=<span class="hljs-built_in">number</span>&amp;format_amount=<span class="hljs-built_in">number</span>&amp;format_tid=<span class="hljs-keyword">string</span>&amp;format_timestamp=<span class="hljs-keyword">second</span>&amp;format_wrap=<span class="hljs-constant">false</span>
+</code></span></pre>
+
+<p style="text-align: justify;"><span style="color:#7B7B7B;"><i>Example response:</i></span></p>
+
+<pre style="text-align: justify;">
+<span style="color:#7B7B7B;"><code class="lang-json">[
+    {&quot;<span class="hljs-attribute">date</span>&quot;: <span class="hljs-value"><span class="hljs-string">&quot;07/01/2017&quot;</span></span>, &quot;<span class="hljs-attribute">credit</span>&quot;: <span class="hljs-value"><span class="hljs-number">575.64</span></span>, &quot;<span class="hljs-attribute">accounting</span>&quot;: <span class="hljs-value"><span class="hljs-number">0.02</span></span>, &quot;<span class="hljs-attribute">destination account</span>&quot;: <span class="hljs-value"><span class="hljs-string">&quot;4d56dd7b1c681834d5d5bc30522de5a530b1d414&quot;</span></span>,&quot;<span class="hljs-attribute">Notes</span>&quot;: <span class="hljs-value"><span class="hljs-string">&quot;Payment&quot;</span></span>,&quot;<span class="hljs-attribute">trade number</span>&quot;:<span class="hljs-value"><span class="hljs-string">&quot;0xa03e2973f561d7a1894ab086a2f043be8b8c3a9e18bf5546d5b89336cc76331d&quot;</span></span>},
+    {&quot;<span class="hljs-attribute">date</span>&quot;: <span class="hljs-value"><span class="hljs-string">&quot;07/01/2017&quot;</span></span>, &quot;<span class="hljs-attribute">credit</span>&quot;: <span class="hljs-value"><span class="hljs-number">574.3</span></span>, &quot;<span class="hljs-attribute">accounting</span>&quot;: <span class="hljs-value"><span class="hljs-number">0.12</span></span>, &quot;<span class="hljs-attribute">destination account</span>&quot;: <span class="hljs-value"><span class="hljs-string">&quot;4d56dd7b1c681834d5d5bc30522de5a530b1d414&quot;</span></span>,&quot;<span class="hljs-attribute">Notes</span>&quot;: <span class="hljs-value"><span class="hljs-string">&quot;Payment&quot;</span></span>,&quot;<span class="hljs-attribute">trade number</span>&quot;:<span class="hljs-value"><span class="hljs-string">&quot;0xa03e2973f561d7a1894ab086a2f043be8b8c3a9e18bf5546d5b89336cc76331d&quot;</span></span>},
+    {&quot;<span class="hljs-attribute">date</span>&quot;: <span class="hljs-value"><span class="hljs-string">&quot;07/01/2017&quot;</span></span>, &quot;<span class="hljs-attribute">credit</span>&quot;: <span class="hljs-value"><span class="hljs-number">573.67</span></span>, &quot;<span class="hljs-attribute">accounting</span>&quot;: <span class="hljs-value"><span class="hljs-number">3.8</span></span>, &quot;<span class="hljs-attribute">destination account</span>&quot;: <span class="hljs-value"><span class="hljs-string">&quot;4d56dd7b1c681834d5d5bc30522de5a530b1d414&quot;</span></span>,&quot;<span class="hljs-attribute">Notes</span>&quot;: <span class="hljs-value"><span class="hljs-string">&quot;Payment&quot;</span></span>,&quot;<span class="hljs-attribute">trade number</span>&quot;:<span class="hljs-value"><span class="hljs-string">&quot;0xa03e2973f561d7a1894ab086a2f043be8b8c3a9e18bf5546d5b89336cc76331d&quot;</span></span>},
+    {&quot;<span class="hljs-attribute">date</span>&quot;: <span class="hljs-value"><span class="hljs-string">&quot;07/01/2017&quot;</span></span>, &quot;<span class="hljs-attribute">credit</span>&quot;: <span class="hljs-value"><span class="hljs-number">571</span></span>, &quot;<span class="hljs-attribute">accounting</span>&quot;: <span class="hljs-value"><span class="hljs-number">0.01</span></span>, &quot;<span class="hljs-attribute">destination account</span>&quot;: <span class="hljs-value"><span class="hljs-string">&quot;4d56dd7b1c681834d5d5bc30522de5a530b1d414&quot;</span></span>,&quot;<span class="hljs-attribute">Notes</span>&quot;:<span class="hljs-value"><span class="hljs-string">&quot;Payment&quot;</span></span>,&quot;<span class="hljs-attribute">trade number</span>&quot;:<span class="hljs-value"><span class="hljs-string">&quot;0xa03e2973f561d7a1894ab086a2f043be8b8c3a9e18bf5546d5b89336cc76331d&quot;</span></span>},
+    ...
+]
+</code></span></pre>
+
+<h3 id="-a-name-recenttrades-api-1-public-symbol-trades-recent-a-"><a name="recenttrades"><span style="color:#2B579E;">/api/webresources/BxpBlockChain?code=9EE1082D53C56C3929355A60C863E4D3&User={0,1}</span></a></h3>
+
+<p style="text-align: justify;"><span style="color:#7B7B7B;"><i>Summary:</i> returns recent trades for the specified currency symbol.</span></p>
+
+<p style="text-align: justify;"><span style="color:#7B7B7B;"><i>Request:</i> <code>http://api.bxpchip-coin.org:8092/api/webresources/BxpBlockChain?code=9EE1082D53C56C3929355A60C863E4D3&User={0,1}</code> where <code>:symbol</code> is a currency symbol traded on Bxpchipcoin exchange (see </span><a href="#cursymbols">Currency symbols</a>)</p>
+
+<p><span style="color:#7B7B7B;"><i>Parameters:</i></span></p>
+
+<table>
+  <thead>
+    <tr>
+      <th><span style="color:#2B579E;">Parameter</span></th>
+      <th><span style="color:#2B579E;">Required</span></th>
+      <th><span style="color:#2B579E;">Type</span></th>
+      <th><span style="color:#2B579E;">Description</span></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span style="color:#7B7B7B;"><code>trade_id</code></span></td>
+      <td><span style="color:#7B7B7B;">Yes</span></td>
+      <td><span style="color:#7B7B7B;">integer</span></td>
+      <td><span style="color:#7B7B7B;">Maximum quantity of returned results, at most 10000</span></td>
+    </tr>
+    <tr>
+      <td><span style="color:#7B7B7B;"><code>format_item</code></span></td>
+      <td><span style="color:#7B7B7B;">No</span></td>
+      <td><span style="color:#7B7B7B;"><code>array</code> or <code>object</code></span></td>
+      <td><span style="color:#7B7B7B;">Format of items returned: as an array (default) or as a list of objects</span></td>
+    </tr>
+    <tr>
+      <td><span style="color:#7B7B7B;"><code>side</code></span></td>
+      <td><span style="color:#7B7B7B;">No</span></td>
+      <td><span style="color:#7B7B7B;"><code>true</code> or <code>false</code></span></td>
+      <td><span style="color:#7B7B7B;">Selects if the side of a trade is returned</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><span style="color:#7B7B7B;"><i>Example:</i></span></p>
+
+<pre>
+<span style="color:#7B7B7B;"><code>/api/<span class="hljs-number">1</span>/<span class="hljs-keyword"><span class="hljs-number">100</span>&amp;format_item=<span class="hljs-keyword">object</span>
+</code></span></pre>
+
+<p><span style="color:#7B7B7B;"><i>Example response:</i></span></p>
+
+<pre style="text-align: justify;">
+<span style="color:#7B7B7B;"><code class="lang-json">{&quot;<span class="hljs-attribute">trades</span>&quot;:<span class="hljs-value">[
+  {&quot;<span class="hljs-attribute">date</span>&quot;:<span class="hljs-value"><span class="hljs-string">&quot;25/02/201&quot;</span></span>,&quot;<span class="hljs-attribute">credit</span>&quot;:<span class="hljs-value"><span class="hljs-string">&quot;442.12&quot;</span></span>,&quot;<span class="hljs-attribute">accounting</span>&quot;:<span class="hljs-value"><span class="hljs-string">&quot;0.09&quot;</span></span>,&quot;<span class="hljs-attribute">destination account</span>&quot;:<span class="hljs-value"><span class="hljs-string">&quot;4d56dd7b1c681834d5d5bc30522de5a530b1d414&quot;</span></span>,&quot;<span class="hljs-attribute">side</span>&quot;:<span class="hljs-value"><span class="hljs-string">&quot;buy&quot;</span></span>},
+  {&quot;<span class="hljs-attribute">date</span>&quot;:<span class="hljs-value"><span class="hljs-string">&quot;25/02/201&quot;</span></span>,&quot;<span class="hljs-attribute">credit</span>&quot;:<span class="hljs-value"><span class="hljs-string">&quot;442.02&quot;</span></span>,&quot;<span class="hljs-attribute">accounting</span>&quot;:<span class="hljs-value"><span class="hljs-string">&quot;0.60&quot;</span></span>,&quot;<span class="hljs-attribute">destination account</span>&quot;:<span class="hljs-value"><span class="hljs-string">&quot;4d56dd7b1c681834d5d5bc30522de5a530b1d414&quot;</span></span>,&quot;<span class="hljs-attribute">side</span>&quot;:<span class="hljs-value"><span class="hljs-string">&quot;buy&quot;</span></span>},
+  {&quot;<span class="hljs-attribute">date</span>&quot;:<span class="hljs-value"><span class="hljs-string">&quot;25/02/201&quot;</span></span>,&quot;<span class="hljs-attribute">credit</span>&quot;:<span class="hljs-value"><span class="hljs-string">&quot;441.57&quot;</span></span>,&quot;<span class="hljs-attribute">accounting</span>&quot;:<span class="hljs-value"><span class="hljs-string">&quot;0.19&quot;</span></span>,&quot;<span class="hljs-attribute">destination account</span>&quot;:<span class="hljs-value"><span class="hljs-string">&quot;4d56dd7b1c681834d5d5bc30522de5a530b1d414&quot;</span></span>,&quot;<span class="hljs-attribute">side</span>&quot;:<span class="hljs-value"><span class="hljs-string">&quot;buy&quot;</span></span>},
+  {&quot;<span class="hljs-attribute">date</span>&quot;:<span class="hljs-value"><span class="hljs-string">&quot;25/02/201&quot;</span></span>,&quot;<span class="hljs-attribute">credit</span>&quot;:<span class="hljs-value"><span class="hljs-string">&quot;442.00&quot;</span></span>,&quot;<span class="hljs-attribute">accounting</span>&quot;:<span class="hljs-value"><span class="hljs-string">&quot;0.42&quot;</span></span>,&quot;<span class="hljs-attribute">destination account</span>&quot;:<span class="hljs-value"><span class="hljs-string">&quot;4d56dd7b1c681834d5d5bc30522de5a530b1d414&quot;</span></span>,&quot;<span class="hljs-attribute">side</span>&quot;:<span class="hljs-value"><span class="hljs-string">&quot;buy&quot;</span></span>},
+  {&quot;<span class="hljs-attribute">date</span>&quot;:<span class="hljs-value"><span class="hljs-string">&quot;25/02/201&quot;</span></span>,&quot;<span class="hljs-attribute">credit</span>&quot;:<span class="hljs-value"><span class="hljs-string">&quot;441.59&quot;</span></span>,&quot;<span class="hljs-attribute">accounting</span>&quot;:<span class="hljs-value"><span class="hljs-string">&quot;0.19&quot;</span></span>,&quot;<span class="hljs-attribute">destination account</span>&quot;:<span class="hljs-value"><span class="hljs-string">&quot;4d56dd7b1c681834d5d5bc30522de5a530b1d414&quot;</span></span>,&quot;<span class="hljs-attribute">side</span>&quot;:<span class="hljs-value"><span class="hljs-string">&quot;buy&quot;</span></span>},
+  {&quot;<span class="hljs-attribute">date</span>&quot;:<span class="hljs-value"><span class="hljs-string">&quot;25/02/201&quot;</span></span>,&quot;<span class="hljs-attribute">credit</span>&quot;:<span class="hljs-value"><span class="hljs-string">&quot;441.59&quot;</span></span>,&quot;<span class="hljs-attribute">accounting</span>&quot;:<span class="hljs-value"><span class="hljs-string">&quot;0.39&quot;</span></span>,&quot;<span class="hljs-attribute">destination account</span>&quot;:<span class="hljs-value"><span class="hljs-string">&quot;4d56dd7b1c681834d5d5bc30522de5a530b1d414&quot;</span></span>,&quot;<span class="hljs-attribute">side</span>&quot;:<span class="hljs-value"><span class="hljs-string">&quot;buy&quot;</span></span>},
+  {&quot;<span class="hljs-attribute">date</span>&quot;:<span class="hljs-value"><span class="hljs-string">&quot;25/02/201&quot;</span></span>,&quot;<span class="hljs-attribute">credit</span>&quot;:<span class="hljs-value"><span class="hljs-string">&quot;442.00&quot;</span></span>,&quot;<span class="hljs-attribute">accounting</span>&quot;:<span class="hljs-value"><span class="hljs-string">&quot;0.01&quot;</span></span>,&quot;<span class="hljs-attribute">destination account</span>&quot;:<span class="hljs-value"><span class="hljs-string">&quot;4d56dd7b1c681834d5d5bc30522de5a530b1d414&quot;</span></span>,&quot;<span class="hljs-attribute">side</span>&quot;:<span class="hljs-value"><span class="hljs-string">&quot;buy&quot;</span></span>},
+  {&quot;<span class="hljs-attribute">date</span>&quot;:<span class="hljs-value"><span class="hljs-string">&quot;25/02/201&quot;</span></span>,&quot;<span class="hljs-attribute">credit</span>&quot;:<span class="hljs-value"><span class="hljs-string">&quot;442.00&quot;</span></span>,&quot;<span class="hljs-attribute">accounting</span>&quot;:<span class="hljs-value"><span class="hljs-string">&quot;0.32&quot;</span></span>,&quot;<span class="hljs-attribute">destination account</span>&quot;:<span class="hljs-value"><span class="hljs-string">&quot;4d56dd7b1c681834d5d5bc30522de5a530b1d414&quot;</span></span>,&quot;<span class="hljs-attribute">side</span>&quot;:<span class="hljs-value"><span class="hljs-string">&quot;buy&quot;</span></span>},
+  {&quot;<span class="hljs-attribute">date</span>&quot;:<span class="hljs-value"><span class="hljs-string">&quot;25/02/201&quot;</span></span>,&quot;<span class="hljs-attribute">credit</span>&quot;:<span class="hljs-value"><span class="hljs-string">&quot;441.57&quot;</span></span>,&quot;<span class="hljs-attribute">accounting</span>&quot;:<span class="hljs-value"><span class="hljs-string">&quot;0.28&quot;</span></span>,&quot;<span class="hljs-attribute">destination account</span>&quot;:<span class="hljs-value"><span class="hljs-string">&quot;4d56dd7b1c681834d5d5bc30522de5a530b1d414&quot;</span></span>,&quot;<span class="hljs-attribute">side</span>&quot;:<span class="hljs-value"><span class="hljs-string">&quot;buy&quot;</span></span>},
+  {&quot;<span class="hljs-attribute">date</span>&quot;:<span class="hljs-value"><span class="hljs-string">&quot;25/02/201&quot;</span></span>,&quot;<span class="hljs-attribute">credit</span>&quot;:<span class="hljs-value"><span class="hljs-string">&quot;441.56&quot;</span></span>,&quot;<span class="hljs-attribute">accounting</span>&quot;:<span class="hljs-value"><span class="hljs-string">&quot;0.38&quot;</span></span>,&quot;<span class="hljs-attribute">destination account</span>&quot;:<span class="hljs-value"><span class="hljs-string">&quot;4d56dd7b1c681834d5d5bc30522de5a530b1d414&quot;</span></span>,&quot;<span class="hljs-attribute">side</span>&quot;:<span class="hljs-value"><span class="hljs-string">&quot;buy&quot;</span></span>}
+]</span>
+</code></span></pre>
+
+<h2 id="-a-name-paymentsrestful-payment-restful-api-a-"><a name="paymentsrestful"><span style="color:#2B579E;">Payment RESTful API</span></a></h2>
+
+<p><span style="color:#7B7B7B;">RESTful API allows to manage funds with the following methods:</span></p>
+
+<ul>
+  <li><span style="color:#7B7B7B;">transfer funds between main and trading accounts - </span><a href="#Payment">/api/webresources/BxpBuy?Amount=10&Number=24856445&Package=1&User=1&Date=20171110&Code=9EE1082D53C56C3929355A60C863E4D3&Bank=ojodeagua&OriginAccount=0x77a389210202b47ab2a370d63279c3d1&FinaAccount=ef3b1a65ae55f47b1f2b999b30e34c1&Pass=M43$,2O17.&IdOri=1&IdDes=1&ComisionOriginAcount=ef3b1a650dd17947b1f2b999b30e34c1&CuentaDestinoComision=0x77a6a447ab2a370d63279c3d1&MyPassSecretComision=pruebados&IdOriComision=1&IdDestinoComision=1</a></li>
+  <li style="text-align: justify;"><span style="color:#7B7B7B;">transfer commissions for funds between main and trading accounts - </span><a href="">/api/webresources/BxpBuy?Amount=10&Number=24856445&Package=1&User=1&Date=20171110&Code=9EE1082D53C56C3929355A60C863E4D3&Bank=ojodeagua&OriginAccount=0x77a389210202b47ab2a370d63279c3d1&FinaAccount=ef3b1a65ae55f47b1f2b999b30e34c1&Pass=M43$,2O17.&IdOri=1&IdDes=1&ComisionOriginAcount=ef3b1a650dd17947b1f2b999b30e34c1&CuentaDestinoComision=0x77a6a447ab2a370d63279c3d1&MyPassSecretComision=pruebados&IdOriComision=1&IdDestinoComision=1</a></li>
+</ul>
+
+<p style="text-align: justify;"><span style="color:#7B7B7B;">Payment operations require</span> <a href="">authentication</a></p>
+
+<h3 id="-a-name-paymentbalance-api-1-payment-balance-a-"><a name="Payment"><span style="color:#2B579E;">/api/webresources/BxpBuy?Amount=10&Number=24856445&Package=1&User=1&Date=20171110&Code=9EE1082D53C56C3929355A60C863E4D3&Bank=ojodeagua&OriginAccount=0x77a389210202b47ab2a370d63279c3d1&FinaAccount=ef3b1a65ae55f47b1f2b999b30e34c1&Pass=M43$,2O17.&IdOri=1&IdDes=1&ComisionOriginAcount=ef3b1a650dd17947b1f2b999b30e34c1&CuentaDestinoComision=0x77a6a447ab2a370d63279c3d1&MyPassSecretComision=pruebados&IdOriComision=1&IdDestinoComision=1</span></a></h3>
+
+<p style="text-align: justify;"><span style="color:#7B7B7B;"><i>Summary:</i> returns the status of the payment,sending the parameters like a date,bank,type of payment,amount,etc.</span></p>
+
+<p style="text-align: justify;"><span style="color:#7B7B7B;"><i>Sample usage at Bxpchipcoin site:</i> see </span><span style="color:#7B7B7B;">.</span></p>
+
+<p style="text-align: justify;"><span style="color:#7B7B7B;"><i>Request:</i> <code>GET Payment RESTful API/api/webresources/BxpBuy?Amount=10&Number=24856445&Package=1&User=1&Date=20171110&Code=9EE1082D53C56C3929355A60C863E4D3&Bank=ojodeagua&OriginAccount=0x77a389210202b47ab2a370d63279c3d1&FinaAccount=ef3b1a65ae55f47b1f2b999b30e34c1&Pass=M43$,2O17.&IdOri=1&IdDes=1&ComisionOriginAcount=ef3b1a650dd17947b1f2b999b30e34c1&CuentaDestinoComision=0x77a6a447ab2a370d63279c3d1&MyPassSecretComision=pruebados&IdOriComision=1&IdDestinoComision=1</code></span></p>
+
+<p style="text-align: justify;"><span style="color:#7B7B7B;"><i><i>Parameters:</i></i> no parameters</span></p>
+
+<p style="text-align: justify;"><span style="color:#7B7B7B;"><i>Example response:</i></span></p>
+
+<pre style="text-align: justify;">
+<span style="color:#7B7B7B;"><code class="lang-json">
+   
+        {
+            &quot;<span>Response</span>&quot;: <span class="hljs-value"><span class="hljs-string">&quot;Complete Payment&quot;</span></span>,
+           
+            
+        },
+        
+</code></span></pre>
+
+<table>
+  <thead>
+    <tr>
+      <th><span style="color:#2B579E;">Parameter</span></th>
+      <th><span style="color:#2B579E;">Required</span></th>
+      <th><span style="color:#2B579E;">Type</span></th>
+      <th><span style="color:#2B579E;">Description</span></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span style="color:#7B7B7B;"><code>amount</code></span></td>
+      <td><span style="color:#7B7B7B;">Yes</span></td>
+      <td><span style="color:#7B7B7B;">decimal</span></td>
+      <td><span style="color:#7B7B7B;">Funds amount to transfer</span></td>
+    </tr>
+    <tr>
+      <td><span style="color:#7B7B7B;"><code>currency_code</code></span></td>
+      <td><span style="color:#7B7B7B;">Yes</span></td>
+      <td><span style="color:#7B7B7B;">string</span></td>
+      <td><span style="color:#7B7B7B;">Currency symbol, e.g. <code>CHIP COIN</code></span></td>
+    </tr>
+  </tbody>
+</table>
+
+<p style="text-align: justify;"><span style="color:#7B7B7B;"><i>Example responses:</i></span></p>
+
+<pre style="text-align: justify;">
+<span style="color:#7B7B7B;"><code class="lang-json">{&quot;<span class="hljs-attribute">message</span>&quot;: <span class="hljs-value"><span class="hljs-string">&quot;Complete Payment&quot;</span></span>}
+</code></span></pre>
+
+<h3 id="-a-name-getaddress-api-1-payment-address-get-a-"><a name="getaddress"><span style="color:#2B579E;">http://api.bxpchip-coin.org:8092/api/webresources/BxpBuy?Amount=10&Number=24856445&Package=1&User=1&Date=20171110&Code=9EE1082D53C56C3929355A60C863E4D3&Bank=ojodeagua&OriginAccount=0x77a389210202b47ab2a370d63279c3d1&FinaAccount=ef3b1a65ae55f47b1f2b999b30e34c1&Pass=M43$,2O17.&IdOri=1&IdDes=1&ComisionOriginAcount=ef3b1a650dd17947b1f2b999b30e34c1&CuentaDestinoComision=0x77a6a447ab2a370d63279c3d1&MyPassSecretComision=pruebados&IdOriComision=1&IdDestinoComision=1</span></a></h3>
+
+<p style="text-align: justify;"><span style="color:#7B7B7B;"><i>Summary:</i> returns multi-currency balance of the main account.</span></p>
+
+
+<p><span style="color:#7B7B7B;"><i>Request:</i> <code>GET http://api.bxpchip-coin.org:8092/api/webresources/BxpBuy?Amount=10&Number=24856445&Package=1&User=1&Date=20171110&Code=9EE1082D53C56C3929355A60C863E4D3&Bank=ojodeagua&OriginAccount=0x77a389210202b47ab2a370d63279c3d1&FinaAccount=ef3b1a65ae55f47b1f2b999b30e34c1&Pass=M43$,2O17.&IdOri=1&IdDes=1&ComisionOriginAcount=ef3b1a650dd17947b1f2b999b30e34c1&CuentaDestinoComision=0x77a6a447ab2a370d63279c3d1&MyPassSecretComision=pruebados&IdOriComision=1&IdDestinoComision=1</code></span></p>
+
+<p><span style="color:#7B7B7B;"><i><i>Parameters:</i></i> no parameters</span></p>
+
+<p><span style="color:#7B7B7B;"><i>Example:</i> <code>GET http://api.bxpchip-coin.org:8092/api/webresources/BxpBuy?Monto=10&NumeroAprobacion=24856445&Paquete=1&Cliente=1&Fecha=20171110&Codigo=9EE16C3929355A60C863E4D3&Sucursal=prueba&CuentaOrigen=0x77a38921070d63279&CuentaDestino=e47b1f2b999b30e34c1&Pass=M17.&IdOri=1&IdDes=1&CuentaOrigenComision=ef3b947b1f2b999b30e34c1&CuentaDestinoComision=d5776a447ab2a370d63279c3d1&MyPassSecretComision=pruebados&IdOriComision=1&IdDestinoComision=1</code></span></p>
+
+<p><span style="color:#7B7B7B;"><i>Example response:</i></span></p>
+
+<pre>
+<code class="lang-json"><span style="color:#7B7B7B;">{&quot;<span class="hljs-attribute">Balances</span>&quot;: <span class="hljs-value">[
+  {
+    &quot;<span class="hljs-attribute">currency_code</span>&quot;: <span class="hljs-value"><span class="hljs-string">USD</span></span>,
+    &quot;<span class="hljs-attribute">amount</span>&quot;: <span class="hljs-value"><span class="hljs-string">0.091</span></span>,   
+    
+  </span>}
+{
+    &quot;<span class="hljs-attribute">currency_code</span>&quot;: <span class="hljs-value"><span class="hljs-string">CHIP COIN</span></span>,
+    &quot;<span class="hljs-attribute">amount</span>&quot;: <span class="hljs-value"><span class="hljs-string">0.091</span></span>,   
+    
+  }
+{
+    &quot;<span class="hljs-attribute">currency_code</span>&quot;: <span class="hljs-value"><span class="hljs-string">BTC</span></span>,
+    &quot;<span class="hljs-attribute">amount</span>&quot;: <span class="hljs-value"><span class="hljs-string">0.091</span></span>,   
+    
+  }
+{
+    &quot;<span class="hljs-attribute">currency_code</span>&quot;: <span class="hljs-value"><span class="hljs-string">ETH</span></span>,
+    &quot;<span class="hljs-attribute">amount</span>&quot;: <span class="hljs-value"><span class="hljs-string">0.091</span></span>,   
+    
+  }
+{
+    &quot;<span class="hljs-attribute">currency_code</span>&quot;: <span class="hljs-value"><span class="hljs-string">RIPPLE</span></span>,
+    &quot;<span class="hljs-attribute">amount</span>&quot;: <span class="hljs-value"><span class="hljs-string">0.091</span></span>,   
+    
+  }
+{
+    &quot;<span class="hljs-attribute">currency_code</span>&quot;: <span class="hljs-value"><span class="hljs-string">DASH</span></span>,
+    &quot;<span class="hljs-attribute">amount</span>&quot;: <span class="hljs-value"><span class="hljs-string">0.091</span></span>,   
+    
+  }
+]}</span>
+</code></pre>
+
+<h2 id="-a-name-tradingstreaming-trading-streaming-end-point-a-"><a name="tradingstreaming"><span style="color:#2B579E;">Trading RESTful API</span></a></h2>
+
+<p style="text-align: justify;"><span style="color:#7B7B7B;">API links:</span></p>
+
+<ul>
+  <li style="text-align: justify;"><span style="color:#7B7B7B;">URL:</span> <a href="http://api.bxpchip-coin.org:8092/api/">http://api.bxpchip-coin.org:8092/api/</a></li>
+  <li><span style="color:#7B7B7B;">Demo URL:</span> <a href="http://api.bxpchip-coin.org:8092/api/">http://api.bxpchip-coin.org:8092/api/</a></li>
+</ul>
+
+<p style="text-align: justify;"><span style="color:#7B7B7B;">Trading endpoint requires sending login message after connection established. All client messages should be signed and should contain valid and active API key (see</span> <a href="">API keys and message signatures</a>).</p>
+
+<p style="text-align: justify;"><span style="color:#7B7B7B;"><i>Sample usage at Bxpchipcoin site:</i> see</span> <a href="https://sys.chip-coin.net:1006/sys/iCommerce/modules/mod_chipcoin/ingresos_ext_wallet.jsp">https://sys.chip-coin.net:1006/sys/iCommerce/modules/mod_chipcoin/ingresos_ext_wallet.jsp</a>.<span style="color:#7B7B7B;"> In the required currency line click <b>Fund</b> icon then click <b>create new address</b> link.</span></p>
+
+<p style="text-align: justify;"><span style="color:#7B7B7B;">The following message types are supported:</span></p>
+
+<h3 id="-a-name-postaddress-api-1-payment-address-post-a-"><a name="postaddress"><span style="color:#2B579E;">/api/webresources/BxpTrading?TypeCoin=1&UserId=1&coin=7&Parity=304.354&Amount=40&originAccount=0x77a389210a447ab2a370d63279c3d1&FinalAccount=ef3f3c517947b1f2b999b30e34c1&Password_or=M4st17.&Import=50&IdOri=1&IdDestP=1&ComisionFinalAccount=0x77a6a447ab2a370d63279c3d1&ComisionFinalId=1&ComisionOriginAccount=e55f37947b1f2b999b30e34c1&IdOriComision=1&MyPassSecretComision=test&code=9EE1082D53C56C392934D3</span></a></h3>
+
+<p style="text-align: justify;"><span style="color:#7B7B7B;"><i>Summary:</i> creates a new movements where change currency symbols; returns a movement status.</span></p>
+
+<p style="text-align: justify;"><span style="color:#7B7B7B;"><i>Request:</i> <code>POST http://api.bxpchip-coin.org:8092/api/webresources/BxpTrading?TypeCoin=1&UserId=1&coin=7&Parity=304.354&Amount=40&originAccount=0x77a389210a447ab2a370d63279c3d1&FinalAccount=ef3f3c517947b1f2b999b30e34c1&Password_or=M4st17.&Import=50&IdOri=1&IdDestP=1&ComisionFinalAccount=0x77a6a447ab2a370d63279c3d1&ComisionFinalId=1&ComisionOriginAccount=e55f37947b1f2b999b30e34c1&IdOriComision=1&MyPassSecretComision=test&code=9EE1082D53C56C392934D3</code></span></p>
+
+<p style="text-align: justify;"><span style="color:#7B7B7B;"><i><i>Parameters:</i></i> recived parameters like a :</span></p>
+
+<table>
+  <thead>
+    <tr>
+      <th><span style="color:#2B579E;">Parameter</span></th>
+      <th><span style="color:#2B579E;">Required</span></th>
+      <th><span style="color:#2B579E;">Type</span></th>
+      <th><span style="color:#2B579E;">Description</span></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span style="color:#7B7B7B;"><code>type_movement</code></span></td>
+      <td><span style="color:#7B7B7B;">Yes</span></td>
+      <td><span style="color:#7B7B7B;">integer</span></td>
+      <td><span style="color:#7B7B7B;">Identifier movement in which is going to do trading.</span></td>
+    </tr>
+    <tr>
+      <td><span style="color:#7B7B7B;"><code>user_id</code></span></td>
+      <td><span style="color:#7B7B7B;">Yes</span></td>
+      <td><span style="color:#7B7B7B;">integer</span></td>
+      <td><span style="color:#7B7B7B;">User identifier</span></td>
+    </tr>
+    <tr>
+      <td><span style="color:#7B7B7B;"><code>symbol</code></span></td>
+      <td><span style="color:#7B7B7B;">Yes</span></td>
+      <td><span style="color:#7B7B7B;">integer<code>BTCUSD</code></span></td>
+      <td><span style="color:#7B7B7B;">Identifier type of coin that wil recive the money doing trading, e.g. <code>BTC</code>(see </span><a href="#cursymbols"><span style="color:#7B7B7B;">Currency symbols</span></a><span style="color:#7B7B7B;">)</span></td>
+    </tr>
+    <tr>
+      <td><span style="color:#7B7B7B;"><code>parity</code></span></td>
+      <td><span style="color:#7B7B7B;">Yes</span></td>
+      <td><span style="color:#7B7B7B;">decimal</span></td>
+      <td><span style="color:#7B7B7B;">parity between both coins that was selected to do trading</span></td>
+    </tr>
+    <tr>
+      <td><span style="color:#7B7B7B;"><code>amount</code></span></td>
+      <td><span style="color:#7B7B7B;">Yes</span></td>
+      <td><span style="color:#7B7B7B;">decimal</span></td>
+      <td><span style="color:#7B7B7B;">Amount thas is removed from balance depending the type of coin that was selected.</span></td>
+    </tr>
+    <tr>
+      <td><span style="color:#7B7B7B;"><code>wallet_pass</code></span></td>
+      <td><span style="color:#7B7B7B;">Yes</span></td>
+      <td><span style="color:#7B7B7B;">string</span></td>
+      <td><span style="color:#7B7B7B;">Password that identify the wallet in which is taken the coins to do trading.</span></td>
+    </tr>
+    <tr>
+      <td><span style="color:#7B7B7B;"><code>source_account</code></span></td>
+      <td><span style="color:#7B7B7B;">Yes</span></td>
+      <td><span style="color:#7B7B7B;">String</span></td>
+      <td><span style="color:#7B7B7B;">source account that will realice the transaction and send the coins specified the symbol that send amount.</span></td>
+    </tr>
+    <tr>
+      <td><span style="color:#7B7B7B;"><code>destination_account</code></span></td>
+      <td><span style="color:#7B7B7B;">Yes</span></td>
+      <td><span style="color:#7B7B7B;">String</span></td>
+      <td><span style="color:#7B7B7B;">destination account that will realice the transaction and recive the coins specified the symbol that recived amount.</span></td>
+    </tr>
+    <tr>
+      <td><span style="color:#7B7B7B;"><code>source_account_id</code></span></td>
+      <td><span style="color:#7B7B7B;">Yes</span></td>
+      <td><span style="color:#7B7B7B;">integer</span></td>
+      <td><span style="color:#7B7B7B;">Account id is the identifier id that send amount to do the transaction.</span></td>
+    </tr>
+    <tr>
+      <td><span style="color:#7B7B7B;"><code>destination_account_id</code></span></td>
+      <td><span style="color:#7B7B7B;">Yes</span></td>
+      <td><span style="color:#7B7B7B;">integer</span></td>
+      <td><span style="color:#7B7B7B;">Account id is the identifier id that recived amount to do the transaction.</span></td>
+    </tr>
+    <tr>
+      <td><span style="color:#7B7B7B;"><code>amount_to_import</code></span></td>
+      <td><span style="color:#7B7B7B;">Yes</span></td>
+      <td><span style="color:#7B7B7B;">decimal</span></td>
+      <td><span style="color:#7B7B7B;">Amount thas is recived to balance depending the type of coin that was selected.</span></td>
+    </tr>
+    <tr>
+      <td><span style="color:#7B7B7B;"><code>source_commission_account</code></span></td>
+      <td><span style="color:#7B7B7B;">Yes</span></td>
+      <td><span style="color:#7B7B7B;">String</span></td>
+      <td><span style="color:#7B7B7B;">source commission account that will realice the transaction and send the coins specified the symbol that send amount.</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<p style="text-align: justify;"><span style="color:#7B7B7B;"><i>Example response:</i></span></p>
+
+<pre style="text-align: justify;">
+<span style="color:#7B7B7B;"><code class="lang-json">{&quot;<span class="hljs-attribute">transactions</span>&quot;: <span class="hljs-value">[
+  {
+    &quot;<span class="hljs-attribute">id</span>&quot;: <span class="hljs-value"><span class="hljs-number">001</span></span>,
+    &quot;<span class="hljs-attribute">type_movement</span>&quot;: <span class="hljs-value"><span class="hljs-number">5</span></span>,
+    &quot;<span class="hljs-attribute">user_id</span>&quot;: <span class="hljs-value"><span class="hljs-number">45</span></span>,
+    &quot;<span class="hljs-attribute">symbol</span>&quot;: <span class="hljs-value"><span class="hljs-number">6</span></span>,
+    &quot;<span class="hljs-attribute">parity</span>&quot;: <span class="hljs-value"><span class="hljs-number">0.001</span></span>,
+    &quot;<span class="hljs-attribute">amount</span>&quot;: <span class="hljs-value"><span class="hljs-number">0.84501</span></span>,
+    &quot;<span class="hljs-attribute">wallet_pass</span>&quot;: <span class="hljs-value"><span class="hljs-string">&quot;JN9UC4445&#39;90JX&quot;</span></span>,
+    &quot;<span class="hljs-attribute">source_account</span>&quot;: <span class="hljs-value"><span class="hljs-string">&quot;1KnVXD1Wc1wZbTHiB1TDgMcnSRi2PnMHAV&quot;</span></span>,
+    &quot;<span class="hljs-attribute">destination_account</span>&quot;: <span class="hljs-value"><span class="hljs-string">&quot;1QBuhFksjoWTQWJKWUPyQ37wsQohLAhJvK&quot;</span></span>,
+    &quot;<span class="hljs-attribute">amount_to_import</span>&quot;: <span class="hljs-value"><span class="hljs-number">.05749865</span></span>
+    
+  </span>}
+]}
+</code></span></pre>
+
+<p style="text-align: justify;"><span style="color:#7B7B7B;"><i>Summary:</i> withdraws money and creates an outgoing crypotocurrency transaction; returns a transaction ID on the exchange or an error.</span></p>
+
+<p style="text-align: justify;"><span style="color:#7B7B7B;"><i>Sample usage at bxpchipcoin site:</i> see</span> <a href="http://api.bxpchip-coin.org:8092/api">http://api.bxpchip-coin.org:8092/api</a><span style="color:#7B7B7B;">. In the required currency line click</span> <span style="color:#2B579E;"><b>Fund</b></span> <span style="color:#7B7B7B;">icon then click</span> <span style="color:#2B579E;"><b>copy address</b></span> <span style="color:#7B7B7B;">link.</span></p>
+
+<p style="text-align: justify;"><span style="color:#7B7B7B;"><i>Request:</i> <code>POST http://api.bxpchip-coin.org:8092/api/webresources/BxpBuy?Monto=10&NumeroAprobacion=24856445&Paquete=1&Cliente=1&Fecha=20171110&Codigo=9EE16C3929355A60C863E4D3&Sucursal=prueba&CuentaOrigen=0x77a38921070d63279&CuentaDestino=e47b1f2b999b30e34c1&Pass=M17.&IdOri=1&IdDes=1&CuentaOrigenComision=ef3b947b1f2b999b30e34c1&CuentaDestinoComision=d5776a447ab2a370d63279c3d1&MyPassSecretComision=pruebados&IdOriComision=1&IdDestinoComision=1</code></span></p>
+
+<p style="text-align: justify;"><span style="color:#7B7B7B;"><i>Parameters:</i></span></p>
+
+<p style="text-align: justify;"><span style="color:#7B7B7B;"><i>Example:</i> <code>amount=0.001&amp;currency_code=BTC&amp;address=1LuWvENyuPNHsHWjDgU1QYKWUYN9xxy7n5</code></span></p>
+
+<p style="text-align: justify;"><span style="color:#7B7B7B;"><i>Example response:</i></span></p>
+
+<pre style="text-align: justify;">
+<span style="color:#7B7B7B;"><code class="lang-json">{&quot;<span class="hljs-attribute">response</span>&quot;: <span class="hljs-value"><span class="hljs-string">&quot;Complete transaction&quot;</span></span>}
+</code></span></pre>
+
+<h3 id="-a-name-transactions-api-1-payment-transactions-a-"><a name="transactions"><span style="color:#2B579E;">http://api.bxpchip-coin.org:8092/api/webresources/BxpBuy?Amount=10&Number=24856445&Package=1&User=1&Date=20171110&Code=9EE1082D53C56C3929355A60C863E4D3&Bank=ojodeagua&OriginAccount=0x77a389210202b47ab2a370d63279c3d1&FinaAccount=ef3b1a65ae55f47b1f2b999b30e34c1&Pass=M43$,2O17.&IdOri=1&IdDes=1&ComisionOriginAcount=ef3b1a650dd17947b1f2b999b30e34c1&CuentaDestinoComision=0x77a6a447ab2a370d63279c3d1&MyPassSecretComision=pruebados&IdOriComision=1&IdDestinoComision=1</span></a></h3>
+
+<p style="text-align: justify;"><span style="color:#7B7B7B;"><i>Summary:</i> returns a status of commission transaction .</span></p>
+
+<p style="text-align: justify;"><span style="color:#7B7B7B;"><i>Sample usage at Bxpchipcoin site:</i> see </span><a href="http://api.bxpchip-coin.org:8092/api/"><span style="color:#7B7B7B;">http://api.bxpchip-coin.org:8092/api/</span></a><span style="color:#7B7B7B;">, <b>History</b> panel.</span></p>
+
+<p style="text-align: justify;"><span style="color:#7B7B7B;"><i>Request:</i> <code>/GET http://api.bxpchip-coin.org:8092/api/webresources/BxpBuy?Amount=10&Number=24856445&Package=1&User=1&Date=20171110&Code=9EE1082D53C56C3929355A60C863E4D3&Bank=ojodeagua&OriginAccount=0x77a389210202b47ab2a370d63279c3d1&FinaAccount=ef3b1a65ae55f47b1f2b999b30e34c1&Pass=M43$,2O17.&IdOri=1&IdDes=1&ComisionOriginAcount=ef3b1a650dd17947b1f2b999b30e34c1&CuentaDestinoComision=0x77a6a447ab2a370d63279c3d1&MyPassSecretComision=pruebados&IdOriComision=1&IdDestinoComision=1</code></span></p>
+
+<p style="text-align: justify;"><span style="color:#7B7B7B;"><i>Parameters:</i></span></p>
+
+<table>
+  <thead>
+    <tr>
+      <th><span style="color:#2B579E;">Parameter</span></th>
+      <th><span style="color:#2B579E;">Required</span></th>
+      <th><span style="color:#2B579E;">Type</span></th>
+      <th><span style="color:#2B579E;">Description</span></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span style="color:#7B7B7B;"><code>destination_commission_account</code></span></td>
+      <td><span style="color:#7B7B7B;">Yes</span></td>
+      <td><span style="color:#7B7B7B;">String</span></td>
+      <td><span style="color:#7B7B7B;">destination commission account that will realice the transaction and send the coins specified the symbol that send amount.</span></td>
+    </tr>
+    <tr>
+      <td><span style="color:#7B7B7B;"><code>source_commission_account_id</code></span></td>
+      <td><span style="color:#7B7B7B;">Yes</span></td>
+      <td><span style="color:#7B7B7B;">integer</span></td>
+      <td><span style="color:#7B7B7B;">Commission account id is the identifier id that send amount to do the transaction.</span></td>
+    </tr>
+    <tr>
+      <td><span style="color:#7B7B7B;"><code>destination_commission_account_id</code></span></td>
+      <td><span style="color:#7B7B7B;">Yes</span></td>
+      <td><span style="color:#7B7B7B;">integer</span></td>
+      <td><span style="color:#7B7B7B;">Commission account id is the identifier id that recived amount to do the transaction.</span></td>
+    </tr>
+    <tr>
+      <td><span style="color:#7B7B7B;"><code>wallet_commission_pass</code></span></td>
+      <td><span style="color:#7B7B7B;">Yes</span></td>
+      <td><span style="color:#7B7B7B;">string</span></td>
+      <td><span style="color:#7B7B7B;">Password that identify the commission wallet in which is taken the coins to do trading.</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<p style="text-align: justify;"><span style="color:#7B7B7B;"><i>Example response:</i></span></p>
+
+<pre style="text-align: justify;">
+<span style="color:#7B7B7B;"><code class="lang-json">{&quot;<span class="hljs-attribute">transactions</span>&quot;: <span class="hljs-value">[
+  {
+   &quot;<span class="hljs-attribute">source_commission_account</span>&quot;: <span class="hljs-value"><span class="hljs-string">&quot;1KnKJHXSXD1Wc1wZbTHiB1TDgMcnSRi2PnMHAV&quot;</span></span>,
+    &quot;<span class="hljs-attribute">destination_commission_account</span>&quot;: <span class="hljs-value"><span class="hljs-string">&quot;1KnVXD1Wc1wZbTHiB1TDgMcnSRi2PnMHAV&quot;</span></span>,
+    &quot;<span class="hljs-attribute">source_commission_account_id</span>&quot;: <span class="hljs-value"><span class="hljs-number">85</span>,
+    &quot;<span class="hljs-attribute">wallet_commission_pass</span>&quot;: <span class="hljs-value"><span class="hljs-string">&quot;IUHXSA8876&quot;</span></span>,
+    <span class="hljs-string">&quot;destination_commission_account_id&quot;</span>: <span class="hljs-number">45</span>
+  </span>}
+]</span>}
+</code></span></pre>
+
+<h3 id="-a-name-transactions-api-1-payment-transactions-a-"><a name="transactions"><span style="color:#2B579E;">/api/webresources/BxpBlockChain?code=9EE1082D53C56C3929355A60C863E4D3&User={0,1}</span></a></h3>
+
+<p style="text-align: justify;"><span style="color:#7B7B7B;"><i>Summary:</i> returns a list of payment transactions and their statuses (array of transactions).</span></p>
+
+<p style="text-align: justify;"><span style="color:#7B7B7B;"><i>Sample usage at Bxpchipcoin site:</i> see</span> <a href="http://api.bxpchip-coin.org:8092/api/">http://api.bxpchip-coin.org:8092/api/</a>, <span style="color:#2B579E;"><b>History</b></span> <span style="color:#7B7B7B;">panel.</span></p>
+
+<p style="text-align: justify;"><span style="color:#7B7B7B;"><i>Request:</i> <code>/GET /api/webresources/BxpBlockChain?code=9EE1082D53C56C3929355A60C863E4D3&User={0,1}</code></span></p>
+
+<p style="text-align: justify;"><span style="color:#7B7B7B;"><i>Parameters:</i></span></p>
+
+<pre style="text-align: justify;">
+<span style="color:#7B7B7B;"><code class="lang-json">{&quot;<span class="hljs-attribute">transactions</span>&quot;: <span class="hljs-value">[
+  {
+   &quot;<span class="hljs-attribute">user_id</span>&quot;: <span class="hljs-value"><span class="hljs-number">395440</span></span>,
+    &quot;<span class="hljs-attribute">user_name</span>&quot;: <span class="hljs-value"><span class="hljs-string">&quot;NODO RAIZ&quot;</span></span>,
+    &quot;<span class="hljs-attribute">timestap</span>&quot;: <span class="hljs-value"><span class="hljs-string">&quot;27/08/2017&quot;</span>,
+    &quot;<span class="hljs-attribute">state</span>&quot;: <span class="hljs-value"><span class="hljs-string">&quot;MEXICO&quot;</span></span>,
+    &quot;<span class="hljs-attribute">amount to import</span>&quot;: <span class="hljs-value"><span class="hljs-number">0.57485</span></span>,
+    &quot;<span class="hljs-attribute">type_movement</span>&quot;: <span class="hljs-value"><span class="hljs-string">&quot;BTC&quot;</span></span>,
+    &quot;<span class="hljs-attribute">accounting</span>&quot;: <span class="hljs-value"><span class="hljs-number">0.57485</span></span>,
+    &quot;<span class="hljs-attribute">credit</span>&quot;: <span class="hljs-value"><span class="hljs-number">150</span></span>,
+    <span class="hljs-string">&quot;amount to import&quot;</span>: <span class="hljs-number">45</span>
+  </span>}
+]</span>}
+</code></span></pre>
+
+<h3 id="-a-name-transactions-api-1-payment-transactions-a-"><a name="Capitaliza"><span style="color:#2B579E;">http://api.bxpchip-coin.org:8092/api/webresources/BxpCapitaliza?code=8E266CCF61D57466C0C4D0E8C180A582&Fecha=20170701</span></a></h3>
+
+<p style="text-align: justify;"><span style="color:#7B7B7B;"><i>Summary:</i> send the date how parameter and returns a general capital of chipoin.</span></p>
+
+<p style="text-align: justify;"><span style="color:#7B7B7B;"><i>Request:</i> <code>/GET http://api.bxpchip-coin.org:8092/api/webresources/BxpCapitaliza?code=8E266CCF61D57466C0C4D0E8C180A582&Fecha=20170701</code></span></p>
+
+<p style="text-align: justify;"><span style="color:#7B7B7B;"><i>Parameters:</i></span></p>
+
+<pre style="text-align: justify;">
+<span style="color:#7B7B7B;"><code class="lang-json">{&quot;<span class="hljs-attribute">Capital</span>&quot;: <span class="hljs-value">[
+  {
+    <span class="hljs-string">&quot;Total Chipcoins&quot;</span>: <span class="hljs-number">1017491.7</span>
+  </span>}
+]</span>}
+</code></span></pre>
+
+
+<h2 id="-a-name-sample-sample-code-a-"><a name="sample"><span style="color:#2B579E;">Sample code</span></a></h2>
+
+<h3 id="node-js-snippet-message-signature" style="text-align: justify;"><span style="color:#2B579E;">Java: message signature</span></h3>
+
+<pre style="text-align: justify;">
+<code class="lang-javascript">    
+    String strResp1 = aplica.sendPost(&quot;http://localhost:8099&quot;, &quot;{\&quot;method\&quot;: \&quot;personal_unlockAccount\&quot;, \&quot;params\&quot;: [\&quot;0x&quot; + strNumCtaOri + &quot;\&quot;, \&quot;&quot; + strPass + &quot;\&quot;, 10 ],\&quot;id\&quot;:&quot; + intIdOri + &quot;}&quot;);
+      System.out.println(&quot;strResp1:&quot; + strResp1);
+      JSONObject jsonObj1 = new JSONObject(strResp1);
+      boolean bolResult = false;
+      try  {
+        <span class="hljs-string">bolResult = jsonObj1.getBoolean(&quot;result&quot;)</span>;         
+        }catch{
+        <span class="hljs-string"> strErrorJson = jsonObj1.getJSONObject(&quot;error&quot;).toString()</span>; 
+    }
+    if (bolResult) {
+       <span class="hljs-string">BigInteger bigNum = EtherUtil.convert((long) fMonto, EtherUtil.Unit.ETHER);
+         String strResp2 = aplica.sendPost(&quot;http://localhost:8099&quot;, &quot;{\&quot;jsonrpc\&quot;:\&quot;2.0\&quot;,\&quot;method\&quot;:\&quot;eth_sendTransaction\&quot;,\&quot;params\&quot;:[{\n&quot;
+            + &quot;  \&quot;from\&quot;: \&quot;0x&quot; + strNumCtaOri + &quot;\&quot;,\n&quot;
+            + &quot;  \&quot;to\&quot;: \&quot;0x&quot; + strNumCtaDest + &quot;\&quot;,\n&quot;
+            + &quot;  \&quot;gas\&quot;: \&quot;0x76c0\&quot;, \n&quot;
+            + &quot;  \&quot;gasPrice\&quot;: \&quot;0x9184e72a000\&quot;, \n&quot;
+            + &quot;  \&quot;value\&quot;: \&quot;0x&quot; + bigNum.toString(16) + &quot;\&quot;, \n&quot;//El numero en formato wei lo convertimos en hexadecimal
+            + &quot;  \&quot;data\&quot;: \&quot;0xd46e8dd67c5d32be8d46e8dd67c5d32be8058bb8eb970870f072445675058bb8eb970870f072445675\&quot;\n&quot;
+            + &quot;}],\&quot;id\&quot;:1}&quot;);
+         JSONObject jsonObj2 = new JSONObject(strResp2);
+         System.out.println(&quot;strResp2:&quot; + strResp2);
+         strNumTransaccion = jsonObj2.getString(&quot;result&quot;);
+         System.out.println(&quot;result:&quot; + strNumTransaccion)</span>;
+         if (!strNumTransaccion.isEmpty()) {
+            <span class="hljs-string">bolSincroniza = true</span>;    
+        }
+    }
+    else if (!strErrorJson.isEmpty()) {
+         <span class="hljs-string">strResult = &quot;ERROR:&quot; + strErrorJson + &quot;Password doesn&#39;t exist&quot;</span>;  
+      } else {
+          <span class="hljs-string">strResult = &quot;ERROR:Incorrect Password &quot;</span>;  
+      }
+                            </span></code><span style="color:#7B7B7B;">
+                        </span></pre>
+
+<p>&nbsp;</p>
+
+
+                </div>
+              </div>
+            </div>
+            </div>
+          </section>
+          <section>
+          <!-- Call to action Start -->
+    <section id="call-to-action">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="block">
+              <h2></h2>
+              <p></p>
+                <a class="btn btn-default btn-call-to-action" href="https://sys.chip-coin.net:1006/sys/iCommerce/modules/mod_chipcoin/ingresos_ext_wallet.jsp" target="_blank">Reg&iacute;strate para comprar</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a class="btn btn-default btn-call-to-action" href="https://sys.chip-coin.net:1006/sys/iCommerce/modules/mod_chipcoin/login.jsp" target="_blank">Ingresar</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+        <!-- footer Start -->
+           <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="footer-manu">
+              <ul>
+                    <li><a href="index.html">Inicio</a></li> 
+                       <li><a href="Quienes Somos.html">Empresa</a></li>
+                    <li><a href="Preguntas.html">Usuarios</a></li>
+                    <li><a href="API.html">API</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
+              </ul>
+            </div>
+      <br>
+      <div class="footer-manu">
+              <ul>
+              <li><a href="https://www.facebook.com/BXPCHIPCOIN" target="_blank"><i class="fa fa-facebook"></i></li>
+                <li><a href="https://twitter.com/BxProInt?s=08" target="_blank"><i class="fa fa-twitter"></i></li>
+                  <li><a href="mailto:info@bisxantone.com "><i class="fa fa-envelope"></i></li>
+              </ul>
+            <p></p>
+          </div>
+        </div>
+      </div>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+    </footer>
+            
+            
+  <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+            
+    
+    </body>
+</html>
